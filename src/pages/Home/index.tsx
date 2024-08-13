@@ -1,85 +1,30 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
-import Left from "./Left";
-import Right from "./Right";
-import Portfolio from "./Portfolio";
+import { Box, Typography } from "@mui/material";
 
 export default function Home() {
   return (
-    <Container>
-      <Box
-        sx={{
-          bgcolor: "#3D4E64",
-          borderBottomRightRadius: 150,
-          borderBottomLeftRadius: 150,
-          overflow: "hidden",
-          color: "white",
-          pt: 5,
-          pb: 3,
+    <Box
+      sx={{
+        paddingY: 10,
+        textAlign: "center",
+      }}
+    >
+      <img
+        src={"/images/logo.png"}
+        width={400}
+        height={400}
+        style={{
+          borderRadius: 400 / 2,
+          marginTop: 20,
         }}
-      >
-        <Typography
-          variant="h3"
-          sx={{
-            mx: 10,
-            fontWeight: 700,
-            fontSize: 36,
-          }}
-        >
-          Rohan Adi Priyatna
-        </Typography>
-        <Typography
-          variant="h3"
-          sx={{
-            mx: 15,
-            fontWeight: 500,
-            fontSize: 36,
-          }}
-        >
-          FullStack Developer
-        </Typography>
-      </Box>
+        alt="logo"
+      />
       <Box
         sx={{
-          overflow: "hidden",
-          color: "black",
-          pt: 5,
-          pb: 3,
-        }}
-      >
-        <Typography
-          variant="body1"
-          sx={{
-            textDecoration: "underline",
-            textDecorationStyle: "solid",
-            textDecorationColor: "#996860",
-            fontSize: 32,
-            fontWeight: 500,
-          }}
-        >
-          Summary
-        </Typography>
-        <Typography
-          variant="body2"
-          sx={{
-            fontSize: 16,
-            fontWeight: 500,
-          }}
-        >
-          I am a web and mobile application developer, with more than 4 years of
-          experience and I will continue to pursue the profession as a
-          programmer
-        </Typography>
-      </Box>
-      <Grid container spacing={2}>
-        <Left />
-        <Right />
-      </Grid>
-      <Portfolio />
-      <Box
-        sx={{
-          height: 56,
+          height: 10,
         }}
       />
-    </Container>
+
+      <Typography variant="h3">Insta Subs Views</Typography>
+    </Box>
   );
 }
